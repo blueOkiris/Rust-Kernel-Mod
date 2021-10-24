@@ -6,8 +6,9 @@ RUST_LIB :=				hello_rust.o
 # Kernel module settings
 MODULE_NAME :=			hello_world
 
-obj-m :=				$(MODULE_NAME).o
-$(MODULE_NAME)-objs:=	c/$(MODULE_NAME)_main.o $(RUST_LIB)
+obj-m :=				$(MODULE_NAME).obj
+$(MODULE_NAME)-objs:=	$(src)/c/src/$(MODULE_NAME)_main.o $(RUST_LIB)
+EXTRA_CFLAGS :=			$(src)/c/include
 
 .PHONY : all
 all : $(MODULE_NAME).ko
