@@ -1,2 +1,9 @@
+# Rust Binaries
 /target
 *.lock
+
+# C binaries
+*.o
+
+# Kernel module
+*.ko
