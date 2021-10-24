@@ -7,3 +7,8 @@
 
 # Kernel module
 *.ko
+*.cmd
+*.symvers
+*.order
+*.mod
+*.mod.c

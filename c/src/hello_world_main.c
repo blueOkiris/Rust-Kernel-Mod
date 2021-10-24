@@ -3,18 +3,19 @@
  * Description: Kernel Module entry point for "Hello, world!" kernel module
  */
 
-#include <linux/module.h>
 #include <linux/init.h>
+#include <linux/module.h>
 
-#include "hello_rust.h"
+//#include "../include/hello_rust.h"
 
 MODULE_AUTHOR("Dylan Turner");
 MODULE_DESCRIPTION("Hello World From Rust");
+MODULE_LICENSE("GPL");
 
 // On module insertion
 static int __init rust_loader_init(void) {
     pr_info("Loading code from Rust library!\n");
-    hello_from_rust();
+    //hello_from_rust();
     return 0;
 }
 
