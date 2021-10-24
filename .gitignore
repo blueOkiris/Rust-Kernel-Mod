@@ -1,5 +1,5 @@
 # Rust Binaries
-/target
+*target*
 *.lock
 
 # C binaries
