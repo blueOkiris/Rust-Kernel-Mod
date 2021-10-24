@@ -25,6 +25,7 @@ $(MODULE_NAME).ko : $(RUST_LIB) $(MODULE_NAME)_main.c
 
 $(RUST_LIB) : $(wildcard $(RUST_FLDR)/src/*.rs) $(RUSTC)
 	cd $(RUST_FLDR); \
-		cargo rustc --release -- \
+		cargo +nightly \
+			rustc --release --target=$(RUST_TARGET) -- \
 			--emit=obj -C relocation-model=static -C code-model=kernel -Z plt=y
 	cp $(RUST_FLDR)/target/$(RUST_TARGET)/release/deps/*.o $@

@@ -14,3 +14,4 @@ I also include examples of how to link multiple Rust files together while doing 
  - Make
  - Gcc
  - Cargo Nightly
+   + If you only have stable, use `rustup toolchain install nightly` to install nightly
