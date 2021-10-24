@@ -13,4 +13,4 @@ I also include examples of how to link multiple Rust files together while doing 
  - Linux Kernel Headers
  - Make
  - Gcc
- - Cargo
+ - Cargo Nightly
