@@ -1,3 +1,8 @@
+/*
+ * Author: Dylan Turner
+ * Description: Replacement panic function for Rust
+ */
+
 use core::panic::PanicInfo;
 
 #[no_mangle]
