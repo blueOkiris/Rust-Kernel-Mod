@@ -15,3 +15,4 @@ I also include examples of how to link multiple Rust files together while doing 
  - Gcc
  - Cargo Nightly
    + If you only have stable, use `rustup toolchain install nightly` to install nightly
+   + Simply installing nightly will not set it as default, don't worry
