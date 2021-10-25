@@ -6,6 +6,7 @@ MODULE_NAME :=			hello_world
 
 obj-m :=				$(MODULE_NAME).o
 $(MODULE_NAME)-objs:=	$(MODULE_NAME)_main.o $(RUST_LIB)
+EXTRA_CFLAGS :=			-I$(PWD)/../include
 
 .PHONY : all
 all : $(MODULE_NAME).ko
