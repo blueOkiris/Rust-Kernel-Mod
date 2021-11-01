@@ -2,7 +2,7 @@
 
 ## Description
 
-Integration of Rust code with a C Kernel Module
+Integration of Rust code with a C-based Linux Kernel Module
 
 This project sets up a minimalistic Linux kernel module in C which it uses to "bootstrap" Rust code so to speak.
 
